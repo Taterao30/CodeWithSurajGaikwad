@@ -1,0 +1,28 @@
+package practice3;
+
+import java.util.Arrays;
+
+public class InsertValueAt {
+
+	public static void main(String[] args) {
+
+		int arr[] = { 1, 2, 4, 5, 6 };
+
+		int newArr[] = new int[arr.length + 1];
+
+		int element = 3;
+		int pos = 2;
+
+		for (int i = 0; i < pos; i++) {
+			newArr[i] = arr[i];
+		}
+		newArr[pos] = element;
+
+		for (int i = pos; i < arr.length; i++) {
+			newArr[i + 1] = arr[i];
+
+		}
+		System.out.println(Arrays.toString(newArr));
+	}
+
+}

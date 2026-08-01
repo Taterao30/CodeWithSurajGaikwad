@@ -7,7 +7,7 @@ public class REmoveDuplicateChar {
 
 	public static void main(String[] args) {
 
-		int arr[] = { 5, 1, 5, 2, 2 };
+		int arr[] = { 1, 5, 5, 1, 1, 2 };
 		Arrays.sort(arr);
 
 		int[] result = new int[arr.length];
